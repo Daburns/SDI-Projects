@@ -93,7 +93,29 @@ var beverages = {
 };
 var guestChoice = beverages.beverageChoice('"A"','"B"');
 
-// Array
+
+// Method,Accsssor and Mutator
+var  dayslefttillparty = {
+    "Mon": 6,
+    "tues": 5,
+    "wed": 4,
+    "thur": 3,
+    "fri": 2,
+    "sat": 1,
+    "sun": 0,
+    "coutdown": function(){
+    var weekday = this.mon + this.tues + this wed + this thur + this fri;
+    var weekend = this sun;
+    var dayslefttillparty = weekday - 5;
+    return weekend days;    
+        
+    }
+    
+    
+}
+
+
+
 
 
 
