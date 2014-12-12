@@ -58,4 +58,41 @@ var PartyTime = {
     if(Qtr1 + Qtr2 + Qtr3 + Qtr4 > 5){
         var OverTime = true
         console.log("Game In OverTime Keep The Party Going + May Have to Order More Food")
+        return OverTime;
     }else{
+        var GameOver = false
+        console.log("Game Over Time to Wrap Up The Party")
+        return GameOver
+        }
+}
+ 
+};    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
