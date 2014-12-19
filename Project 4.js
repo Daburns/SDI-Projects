@@ -33,3 +33,21 @@ function isPhoneNumber(str) {
   return ret;
 }
 //email pattern 
+function isEmail(str) {
+  function isValid(char) {
+    return 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.-_'.contains(char.toUpperCase());
+  }
+
+  var splitStr = str.split('@');
+  if(splitStr.length === 2 && splitStr[1].indexOf('.') !== -1) {
+    var ret = true;
+    Array.prototype.forEach.call(splitStr[0], function(char) {
+      ret = !isValid(char) ? false : ret;
+    });
+    Array.prototype.forEach.call(splitStr[1], function(char) {
+      ret = !isValid(char) ? false : ret;
+    });
+    return ret;
+  }
+  return false;
+}
