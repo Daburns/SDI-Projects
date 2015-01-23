@@ -5,6 +5,7 @@
 
 //String
 // Phone number pattern
+//MakeUp ;True and false statements  week 1 
 function isPhoneNumber(str) {
   if(str.length !== 12) return false;
 
@@ -97,7 +98,7 @@ function strToNum(str) {
   return parseInt(str, 10);
 }
 // Array
-
+// Make Up: Week 2
 // Find smallest number greater than min, or NaN if all are smaller.
 function minVal(arr, min) {
   return arr.reduce(function(a, b) {
